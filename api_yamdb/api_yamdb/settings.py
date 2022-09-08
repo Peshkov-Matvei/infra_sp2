@@ -21,6 +21,7 @@ INSTALLED_APPS = [
     'rest_framework_simplejwt',
     'reviews',
     'api',
+    'api_yamdb',
 ]
 
 MIDDLEWARE = [
