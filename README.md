@@ -6,7 +6,7 @@ API проект для получения информации, выполне�
 - Django
 - Docker
 - docker-compose
-### Шаблон  env-файла
+### Шаблон env-файла
 ```
 DB_ENGINE=django.db.backends.postgresql
 DB_NAME=postgres
@@ -37,3 +37,9 @@ docker-compose exec web python manage.py collectstatic --no-input
 ```
 docker-compose exec web python manage.py createsuperuser
 ```
+- Заполните базу данных 
+```
+docker-compose exec web python manage.py loaddata fixtures.json
+```
+### Автор проекта
+Пешков Матвей студент ЯндексПрактикума
